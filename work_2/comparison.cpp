@@ -2,7 +2,6 @@
 #include "chrono"
 #include "timer.h"
 #include "random"
-#include "algorithm"
 #include "array"
 #include "vector"
 #include "deque"
@@ -91,3 +90,4 @@ int main() {
     std::cout << "Working time of forward list is  " << flst_time << std::endl;
     return 0;
 }
+

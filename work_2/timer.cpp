@@ -38,11 +38,8 @@ public:
         duration = steady_clock::duration(0);
     }
 
-    ~Timer() {
-        std::cout << "Duration is " <<
-                  duration_cast<T>(steady_clock::now() - start).count()
-                  << std::endl;
-    }
+    ~Timer() = default;
+
 
 
 private:
