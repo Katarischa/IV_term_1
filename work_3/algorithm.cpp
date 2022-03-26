@@ -153,6 +153,9 @@ int main() {
     std::cout << "Sequence p_4: " << p_4 << std::endl;
 
     // 19.
+    auto lower = std::ranges::lower_bound(p_4.begin(), p_4.end(), 1);
+    auto upper = std::ranges::upper_bound(p_4.begin(), p_4.end(), 1);
+    std::cout << "Value 1 can be between " << std::distance(p_4.begin(), lower) <<" and "<< std::distance(p_4.begin(), upper) << std::endl;
 
     // 20. выведем все итоговые последовательности
     std::cout << "p1 " << p_1 << "\n" << "p2 " << p_2 << "\n" << "p3 " << p_3 << "\n" << "p4 " << p_4;
