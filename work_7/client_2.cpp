@@ -4,6 +4,7 @@
 using namespace boost::asio;
 using namespace boost::asio::ip;
 
+
 std::string read_data(tcp::socket &socket) {
     boost::asio::streambuf buf;
     read_until(socket, buf, "\n");
